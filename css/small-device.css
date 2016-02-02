@@ -12,6 +12,10 @@ html {
   margin-top: 40%;
 }
 
+#mobile-title {
+  font-size: 6em;
+}
+
 /* Temporary */
 #sub-title {
   color: #e05a4c;
@@ -54,7 +58,7 @@ html {
   display: none;
   float:right;
   height: 100%;
-  min-width: 300px;
+  min-width: 400px;
   z-index: 10;
 }
 
@@ -63,12 +67,13 @@ html {
   font-family: sans-serif;
   color: #f6f6f6;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .menu li {
   list-style: none;
   padding: 5% 0 5% 0%;
+  margin-top: 10%;
 }
 
 .menu-close {
@@ -84,6 +89,7 @@ html {
   font-family: sans-serif;
   color: #4c4d4f;
   text-transform: uppercase;
+  font-size: 2em;
   position: fixed;
   top: 30px;
   right: 35px;
@@ -101,7 +107,7 @@ html {
 .content {
   color: #4c4d4f;
   font-family: sans-serif;
-  font-size: 1.15em;
+  font-size: 1.5em;
   line-height: 135%;
 }
 
