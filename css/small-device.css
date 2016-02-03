@@ -38,11 +38,15 @@ html {
     color: #e05a4c;
     text-decoration: none;
     letter-spacing: .25em;
-    font-size: 1em;
+    font-size: .8em;
 }
 
 .contact-sep {
   display: none;
+}
+
+.contact-break {
+  display: inline;
 }
 
 

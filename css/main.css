@@ -41,6 +41,10 @@ html {
     letter-spacing: .25em;
 }
 
+.contact-break {
+  display: none;
+}
+
 
 
 /******** Menu Styling *******/
