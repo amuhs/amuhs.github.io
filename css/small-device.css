@@ -38,9 +38,12 @@ html {
     color: #e05a4c;
     text-decoration: none;
     letter-spacing: .25em;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
+.contact-sep {
+  display: none;
+}
 
 
 /******** Menu Styling *******/
