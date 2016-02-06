@@ -208,6 +208,7 @@ html {
   text-align: center;
   margin-top: 10%;
   margin-bottom: 20%;
+  line-height: normal;
 }
 
 select {
