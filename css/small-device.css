@@ -102,8 +102,22 @@
 /******** Tic Tac Toe Styling *******/
 
 .board {
-  /*margin-left: 5%;*/
+  /*margin-left: 23%;*/
   display: block;
+}
+
+.content img {
+  z-index: 5;
+}
+
+.row-2 {
+  display: block;
+  clear: both;
+}
+
+.row-3 {
+  display: block;
+  clear: both;
 }
 
 .row-1 div {
@@ -131,69 +145,83 @@
 }
 
 #one {
-  border-right: 2px solid;
-  border-bottom: 2px solid;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
 #two {
-  border-right: 2px solid;
-  border-left: 2px solid;
-  border-bottom: 2px solid;
+  border-right: 5px solid;
+  border-left: 5px solid;
+  border-bottom: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
 #three {
-  border-left: 2px solid;
-  border-bottom: 2px solid;
+  border-left: 5px solid;
+  border-bottom: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
 #four {
-  border-top: 2px solid;
-  border-right: 2px solid;
-  border-bottom: 2px solid;
+  border-top: 5px solid;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
 #five {
-  border: 2px solid;
+  border: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
 #six {
-  border-top: 2px solid;
-  border-left: 2px solid;
-  border-bottom: 2px solid;
+  border-top: 5px solid;
+  border-left: 5px solid;
+  border-bottom: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
 #seven {
-  border-top: 2px solid;
-  border-right: 2px solid;
+  border-top: 5px solid;
+  border-right: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
 #eight {
-  border-top: 2px solid;
-  border-right: 2px solid;
-  border-left: 2px solid;
+  border-top: 5px solid;
+  border-right: 5px solid;
+  border-left: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
 #nine {
-  border-top: 2px solid;
-  border-left: 2px solid;
+  border-top: 5px solid;
+  border-left: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
+}
+
+button {
+  clear: left;
+  margin: 0 auto;
+  margin-top: 20%;
+  display: block;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  color: #f6f6f6;
+  width: 200px;
+  height: 42px;
+  background-color: #4a8c56;
 }
 
 img {
