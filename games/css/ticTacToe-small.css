@@ -3,127 +3,107 @@
   display: block;
 }
 
-.content img {
-  z-index: 5;
-  height: 100px;
-  width: auto;
-}
-
-.row-2 {
-  display: block;
-  clear: both;
-}
-
-.row-3 {
-  display: block;
-  clear: both;
-}
-
-.row-1 div {
-  display: inline-block;
-  float:left;
-  height: 100px;
-  width: 100px;
-  cursor: pointer;
-}
-
-.row-2 div {
-  display: inline-block;
-  float:left;
-  height: 100px;
-  width: 100px;
-  cursor: pointer;
-}
-
-.row-3 div {
-  display: inline-block;
-  float:left;
-  height: 100px;
-  width: 100px;
-  cursor: pointer;
-}
-
 #one {
   border-right: 2px solid;
   border-bottom: 2px solid;
-  border-color: #4c4d4f;
-  z-index: 0;
+  height: 100px;
+  width: 100px;
 }
 
 #two {
   border-right: 2px solid;
   border-left: 2px solid;
   border-bottom: 2px solid;
-  border-color: #4c4d4f;
-  z-index: 0;
+  height: 100px;
+  width: 100px;
 }
 
 #three {
   border-left: 2px solid;
   border-bottom: 2px solid;
-  border-color: #4c4d4f;
-  z-index: 0;
+  height: 100px;
+  width: 100px;
 }
 
 #four {
   border-top: 2px solid;
   border-right: 2px solid;
   border-bottom: 2px solid;
-  border-color: #4c4d4f;
-  z-index: 0;
 }
 
 #five {
   border: 2px solid;
-  border-color: #4c4d4f;
-  z-index: 0;
 }
 
 #six {
   border-top: 2px solid;
   border-left: 2px solid;
   border-bottom: 2px solid;
-  border-color: #4c4d4f;
-  z-index: 0;
 }
 
 #seven {
   border-top: 2px solid;
   border-right: 2px solid;
-  border-color: #4c4d4f;
-  z-index: 0;
 }
 
 #eight {
   border-top: 2px solid;
   border-right: 2px solid;
   border-left: 2px solid;
-  border-color: #4c4d4f;
-  z-index: 0;
 }
 
 #nine {
   border-top: 2px solid;
   border-left: 2px solid;
-  border-color: #4c4d4f;
-  z-index: 0;
 }
 
-button {
-  clear: left;
-  margin: 0 auto;
-  margin-top: 20%;
-  display: block;
-  font-size: 30px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  color: #f6f6f6;
-  width: 200px;
-  height: 42px;
-  background-color: #4a8c56;
+#one img {
+  height: 100px;
+  width: 100px;
 }
 
+#two img {
+  height: 100px;
+  width: 100px;
+}
+
+#three img {
+  height: 100px;
+  width: 100px;
+}
+
+#four img {
+  height: 100px;
+  width: 100px;
+}
+
+#five img {
+  height: 100px;
+  width: 100px;
+}
+
+#six img {
+  height: 100px;
+  width: 100px;
+}
+
+#seven img {
+  height: 100px;
+  width: 100px;
+}
+
+#eight img {
+  height: 100px;
+  width: 100px;
+}
+
+#nine img {
+  height: 100px;
+  width: 100px;
+}
+/*
 img {
   height: 100px;
   width: auto;
 }
+*/
