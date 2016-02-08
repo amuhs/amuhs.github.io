@@ -100,11 +100,6 @@
 
 /******** Tic Tac Toe Styling *******/
 
-.board {
-  margin-left: 5%;
-  display: block;
-}
-
 #one {
   border-right: 2px solid;
   border-bottom: 2px solid;
@@ -131,32 +126,44 @@
   border-top: 2px solid;
   border-right: 2px solid;
   border-bottom: 2px solid;
+  height: 100px;
+  width: 100px;
 }
 
 #five {
   border: 2px solid;
+  height: 100px;
+  width: 100px;
 }
 
 #six {
   border-top: 2px solid;
   border-left: 2px solid;
   border-bottom: 2px solid;
+  height: 100px;
+  width: 100px;
 }
 
 #seven {
   border-top: 2px solid;
   border-right: 2px solid;
+  height: 100px;
+  width: 100px;
 }
 
 #eight {
   border-top: 2px solid;
   border-right: 2px solid;
   border-left: 2px solid;
+  height: 100px;
+  width: 100px;
 }
 
 #nine {
   border-top: 2px solid;
   border-left: 2px solid;
+  height: 100px;
+  width: 100px;
 }
 
 #one img {
