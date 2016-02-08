@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
 #title {
   color: #4c4d4f;
   font-family: 'Lato', sans-serif;
@@ -212,5 +214,5 @@
 }
 
 button {
-    font-weight: 300;
+    font-weight: 400;
 }
