@@ -5,8 +5,6 @@
 
 .content img {
   z-index: 5;
-  height: 100px;
-  width: auto;
 }
 
 .row-2 {
@@ -121,4 +119,9 @@ button {
   width: 200px;
   height: 42px;
   background-color: #4a8c56;
+}
+
+img {
+  height: 100px;
+  width: auto;
 }
