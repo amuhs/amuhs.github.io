@@ -2,14 +2,13 @@
 <html>
 <head>
   <title>Andrew Muhs</title>
-  <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 900px)" href="../css/small-device.css" />
-  <link rel="stylesheet" type="text/css" href="css/rpsls.css"/>
+  <link rel="stylesheet" type="text/css" href="css/ticTacToe.css">
 </head>
 <body>
   <p class="menu-btn">MENU</p>
-  <h1 id="title">Rock, Paper, Scissors...<br/>Lizard, Spock<a class="egg" href="rpsls-vid.html">!</a></h1>
-  <!--<p class="light about"><a href="#">About this game.</a></p>-->
+  <h1 id="title">Tic Tac Toe!</h1>
   <div class="menu">
     <img class="menu-close" src="../img/menu-close.png"/>
     <ul>
@@ -27,23 +26,29 @@
     <hr/>
     <br/>
     <br/>
-    <div id="page">
-      <!--<h1>R, P, S, L, S</h1>-->
-        <select id="choices">
-          <option value="">Choices</option>
-          <option value="rock">Rock</option>
-          <option value="paper">Paper</option>
-          <option value="scissors">Scissors</option>
-          <option value="lizard">Lizard</option>
-          <option value="spock">Spock</option>
-        </select>
-        <!--<h4 id="sub-title" class="light">coming soon...</h4>-->
-      <div id="result" class="light"></div>
+    <div class="board">
+      <div class="row-1">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+      </div>
+      <div class="row-2">
+        <div id="four"></div>
+        <div id="five"></div>
+        <div id="six"></div>
+      </div>
+      <div class="row-3">
+        <div id="seven"></div>
+        <div id="eight"></div>
+        <div id="nine"></div>
+      </div>
+      <div id="result"></div>
     </div>
   </div>
+  <button id="reset">Reset</button>
   <br/>
   <script src="../js/jquery-2.2.0.min.js"></script>
   <script src="../js/script.js"></script>
-  <script src="js/rpsls.js"></script>
+  <script src="js/ticTacToe.js"></script>
 </body>
 </html>
