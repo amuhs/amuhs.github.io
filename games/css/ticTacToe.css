@@ -3,10 +3,6 @@
   display: block;
 }
 
-.content img {
-  z-index: 5;
-}
-
 .row-2 {
   display: block;
   clear: both;
