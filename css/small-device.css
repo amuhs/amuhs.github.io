@@ -102,7 +102,7 @@
 /******** Tic Tac Toe Styling *******/
 
 .board {
-  /*margin-left: 23%;*/
+  margin-left: 0%;
   display: block;
 }
 
