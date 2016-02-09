@@ -4,6 +4,24 @@ html {
   background-color: #f6f6f6;
 }
 
+.home-title {
+  display: none;
+}
+
+.logo-1 {
+  margin-top: 15%;
+  display: none;
+}
+
+.logo-2 {
+  margin-top: 15%;
+  display: none;
+}
+
+#center {
+  text-align: center;
+}
+
 #title {
   color: #4c4d4f;
   font-family: 'Lato', sans-serif;
