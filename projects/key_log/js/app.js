@@ -41,6 +41,6 @@ $(document).ready(function(){
     re = /#\w+\n/; // Looks for an octothorpe (#) and the letters following before the next \n
     key = text.match(re); // Matches the regex and assigns it to key
     item.parent().remove(); // Removes the div/item from the "out" bin
-    $('<div class="item hover"><h2>' + str + '</h2></div>').show('slow').appendTo(".left");
+    $('<div class="item hover"><h2>' + key + '</h2></div>').show('slow').appendTo(".left");
   });
 });
