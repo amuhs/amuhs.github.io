@@ -41,14 +41,14 @@
   cursor: pointer;
 }
 
-#one {
+#b1 {
   border-right: 5px solid;
   border-bottom: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
-#two {
+#b2 {
   border-right: 5px solid;
   border-left: 5px solid;
   border-bottom: 5px solid;
@@ -56,14 +56,14 @@
   z-index: 0;
 }
 
-#three {
+#b3 {
   border-left: 5px solid;
   border-bottom: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
-#four {
+#b4 {
   border-top: 5px solid;
   border-right: 5px solid;
   border-bottom: 5px solid;
@@ -71,13 +71,13 @@
   z-index: 0;
 }
 
-#five {
+#b5 {
   border: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
-#six {
+#b6 {
   border-top: 5px solid;
   border-left: 5px solid;
   border-bottom: 5px solid;
@@ -85,14 +85,14 @@
   z-index: 0;
 }
 
-#seven {
+#b7 {
   border-top: 5px solid;
   border-right: 5px solid;
   border-color: #4c4d4f;
   z-index: 0;
 }
 
-#eight {
+#b8 {
   border-top: 5px solid;
   border-right: 5px solid;
   border-left: 5px solid;
@@ -100,7 +100,7 @@
   z-index: 0;
 }
 
-#nine {
+#b9 {
   border-top: 5px solid;
   border-left: 5px solid;
   border-color: #4c4d4f;
