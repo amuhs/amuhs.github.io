@@ -2,9 +2,9 @@ $(document).ready(function(){
   var low, high, elems, arr, val, result;
   $('#search').click(function(){
     elems = document.getElementsByClassName( "arr" );
-    $(elems).removeClass('high');
-    $(elems).removeClass('low');
-    $(elems).removeClass('mid');
+    // $(elems).removeClass('high');
+    // $(elems).removeClass('low');
+    // $(elems).removeClass('mid');
     $('.result').text("Result: ");
     arr = $.makeArray(elems);
     val = $('.input-txt').val();
@@ -13,11 +13,13 @@ $(document).ready(function(){
   });
 
   $('#reset').click(function(){
-    var divs = document.getElementsByClassName("divs");
+    var divs = document.getElementsByClassName("square");
+    $(divs).removeClass('high');
+    $(divs).removeClass('low');
+    $(divs).removeClass('mid');
     val = $('.input-txt').val();
-    $(divs).removeClass('.high');
-    $(divs).removeClass('.low');
-    $(divs).removeClass('.mid');
+    $('.result').text("Result: ");
+    // console.log(divs);
   });
 
 
