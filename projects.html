@@ -2,27 +2,45 @@
 <html>
 <head>
   <title>Andrew Muhs</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 900px)" href="css/small-device.css" />
+  <!-- Browser Tab Icon Link -->
+  <link rel="icon" href="img/icon.png">
 </head>
 <body>
-  <p class="menu-btn">MENU</p>
-  <h1 id="title">Projects</h1>
-  <div class="menu">
-    <img class="menu-close" src="img/menu-close.png"/>
-    <ul>
-      <br/>
-      <li><a href="index.html">Home</a></li>
-      <hr/>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="games.html">Games</a></li>
-      <li><a href="workshop.html">Workshop</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-  <div class="content">
-    <hr/>
+  <!-- Header / Navigation -->
+  <!-- https://getbootstrap.com/examples/navbar-fixed-top/ -->
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a id="home-btn" class="navbar-brand" href="index.html">Andrew Muhs</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Projects</a></li>
+          <!-- Games Dropdown -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="games/rpsls.html">RPSLS</a></li>
+              <li><a href="games/tic-tac-toe-singleplayer.html">Tic-Tac-Toe (S)</a></li>
+              <li><a href="games/tic-tac-toe-multiplayer.html">Tic-Tac-Toe (M)</a></li>
+            </ul>
+          </li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="verses.html">Verses</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+           <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Content Starts Here -->
+  <div class="content push-dwn-10">
+    <!-- <h2 id="title" class="light">Projects</h2>
+    <hr/> -->
     <br/>
     <div class="project">
       <h4 id="sub-title" class="light">Guide to Computer-based Training</h4>
@@ -41,7 +59,7 @@
     <hr/>
     <div class="project short">
       <h4 id="sub-title" class="light">Personnel Training Record Scrubber</h4>
-      <p>An automated Microsoft Excel document designed to read a training record, locate overdue task milestones, and compare member’s documented tasks to required shop tasks in seconds. This reduced time examining training records of a 30-person work center, from three days to three hours.</p>
+      <p>An automated Microsoft Excel document designed to read a training record, locate overdue task milestones, and compare member's documented tasks to required shop tasks in seconds. This reduced time examining training records of a 30-person work center, from three days to three hours.</p>
       <p class="smaller">Because of the information contained within this document a link to the full text cannot be provided.</p>
     </div>
     <hr/>
@@ -55,7 +73,7 @@
     <hr/>
     <div class="project short">
       <h4 id="sub-title" class="light">Key Log</h4>
-      <a href="projects/key_log/index.html">
+      <a href="projects/key-log/index.html">
         <img class="center" src="img/key-log.png"/>
       </a>
       <p>While interviewing for an internship, I was taken on a tour of the facilities and noticed that when anyone needed a vehicle they had to sign out the key. In order to sign the key out however, you have to create an event in an Outlook calendar. This immediately jumped out as something to be improved upon so I went to work. What I came up with is what you see above. With a list of keys to pick from, the user can type their name in at the top and select the key desired. The key is then moved from the list on the left and move to the "out" list with the name and timestamp included. Please feel free to click on the picture to explore the key log.</p>
@@ -64,7 +82,13 @@
     <h4 id="sub-title" class="light"><span class="smaller">more to come...</span></h4>
     <br/>
   </div>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Copyright &copy; 2016 <a href="mailto:ajmuhs@iastate.edu">
+        Andrew Muhs</a></p>
+    </div>
+  </footer>
   <script src="js/jquery-2.2.0.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

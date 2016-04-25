@@ -20,24 +20,24 @@
 .row-1 div {
   display: inline-block;
   float:left;
-  height: 200px;
-  width: 200px;
+  height: 210px;
+  width: 210px;
   cursor: pointer;
 }
 
 .row-2 div {
   display: inline-block;
   float:left;
-  height: 200px;
-  width: 200px;
+  height: 210px;
+  width: 210px;
   cursor: pointer;
 }
 
 .row-3 div {
   display: inline-block;
   float:left;
-  height: 200px;
-  width: 200px;
+  height: 210px;
+  width: 210px;
   cursor: pointer;
 }
 
@@ -121,8 +121,6 @@ button {
   background-color: #4a8c56;
 }
 
-/*.winMsg {
-  text-align: center center;
-  font-family: 'Lato', sans-serif;
-  color: red;
-}*/
+.game {
+  margin-bottom: 4%;
+}

@@ -2,27 +2,52 @@
 <html>
 <head>
   <title>Andrew Muhs</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 900px)" href="css/small-device.css" />
+  <!-- Browser Tab Icon Link -->
+  <link rel="icon" href="img/icon.png">
 </head>
 <body>
-  <p class="menu-btn">MENU</p>
-  <h1 id="title" class="light contact">
-    <a class="left" href="mailto:ajmuhs@iastate.edu">EMAIL</a><span class="contact-sep">&emsp;|&emsp;</span><span class="contact-break"><br/></span> <a class="right" href="https://www.linkedin.com/in/andrew-muhs-226a4081" target="_blank">LINKEDIN</a></h1>
-  <div class="menu">
-    <img class="menu-close" src="img/menu-close.png"/>
-    <ul>
-      <br/>
-      <li><a href="index.html">Home</a></li>
-      <hr/>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="games.html">Games</a></li>
-      <li><a href="workshop.html">Workshop</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
+  <!-- Header / Navigation -->
+  <!-- https://getbootstrap.com/examples/navbar-fixed-top/ -->
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a id="home-btn" class="navbar-brand" href="index.html">Andrew Muhs</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="projects.html">Projects</a></li>
+          <!-- Games Dropdown -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="games/rpsls.html">RPSLS</a></li>
+              <li><a href="games/tic-tac-toe-singleplayer.html">Tic-Tac-Toe (S)</a></li>
+              <li><a href="games/tic-tac-toe-multiplayer.html">Tic-Tac-Toe (M)</a></li>
+            </ul>
+          </li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="verses.html">Verses</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+           <li class="active"><a href="#">Contact</a></li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Content Starts Here -->
+  <h1 id="title" class="light contact push-dwn-20">
+    <a href="mailto:ajmuhs@iastate.edu">EMAIL</a><span class="contact-sep">&emsp;|&emsp;</span><span class="contact-break"><br/></span> <a href="https://www.linkedin.com/in/andrew-muhs-226a4081" target="_blank">LINKEDIN</a>
+  </h1>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Copyright &copy; 2016 <a href="mailto:ajmuhs@iastate.edu">
+        Andrew Muhs</a></p>
+    </div>
+  </footer>
   <script src="js/jquery-2.2.0.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

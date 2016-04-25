@@ -2,28 +2,43 @@
 <html>
 <head>
   <title>Andrew Muhs</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 900px)" href="css/small-device.css" />
+  <!-- Browser Tab Icon Link -->
+  <link rel="icon" href="img/icon.png">
 </head>
 <body>
-  <p class="menu-btn">MENU</p>
-  <h1 id="title">Workshop</h1>
-  <div class="menu">
-    <img class="menu-close" src="img/menu-close.png"/>
-    <ul>
-      <br/>
-      <li><a href="index.html">Home</a></li>
-      <hr/>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="games.html">Games</a></li>
-      <li><a href="#">Workshop</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-  <div class="content">
-    <hr/>
-    <br/>
+  <!-- Header / Navigation -->
+  <!-- https://getbootstrap.com/examples/navbar-fixed-top/ -->
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a id="home-btn" class="navbar-brand" href="index.html">Andrew Muhs</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="projects.html">Projects</a></li>
+          <!-- Games Dropdown -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="games/rpsls.html">RPSLS</a></li>
+              <li><a href="games/tic-tac-toe-singleplayer.html">Tic-Tac-Toe (S)</a></li>
+              <li><a href="games/tic-tac-toe-multiplayer.html">Tic-Tac-Toe (M)</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="#">Workshop</a></li>
+          <li><a href="verses.html">Verses</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+           <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Content Starts Here -->
+  <div class="content push-dwn-10">
     <h1>Description</h1>
     <p>A brief, informal, introduction to web development; this workshop was designed to provide an overview of html and css in order to provide a start to becoming a web developer.</p>
     <p>Students begin with a skeleton html file and are instructed in its different parts. Once this is completed students are shown a basic web page and asked to duplicate it. Resources as well as a few nudges in the right direction are also provided.</p>
@@ -84,8 +99,8 @@
            &lt;/body&gt;
            &lt;/html&gt;
         </pre>
-    </div>
-    <li>Your done! The html above will be explained during the workshop.</li>
+      </div>
+      <li>Your done! The html above will be explained during the workshop.</li>
     </ol>
     <br/>
     <h1>Resources</h1>
@@ -97,7 +112,13 @@
       <!--<li><a href="https://oscarotero.com/jquery/">jQuery Cheat Sheet</a></li>-->
     </ul>
   </div>
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Copyright &copy; 2016 <a href="mailto:ajmuhs@iastate.edu">
+        Andrew Muhs</a></p>
+    </div>
+  </footer>
   <script src="js/jquery-2.2.0.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
