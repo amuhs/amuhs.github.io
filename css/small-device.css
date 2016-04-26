@@ -8,10 +8,10 @@
 
 .content img {
     width: 75% !important;
-    height: auto;
+    height: auto !important;
 }
 
-.project .right {
+/*.project .right {
   float: right;
   height: 75px;
   width: auto;
@@ -30,7 +30,7 @@
   margin: 5% auto;
   height: 75px;
   width: auto;
-}
+}*/
 
 /******** Tic Tac Toe Styling *******/
 
