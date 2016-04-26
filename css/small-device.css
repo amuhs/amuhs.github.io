@@ -6,8 +6,24 @@
     margin-top: 30% !important;
 }
 
-.content img {
-  height: 150px;
+.project .right {
+  float: right;
+  height: 75px;
+  width: auto;
+  margin-left: 5%;
+}
+
+.project .left {
+  float: left;
+  height: 75px;
+  width: auto;
+  margin-right: 5%;
+}
+
+.project .center {
+  display: block;
+  margin: 5% auto;
+  height: 75px;
   width: auto;
 }
 
