@@ -6,6 +6,11 @@
     margin-top: 30% !important;
 }
 
+.content img {
+  width: 75%;
+  height: auto;
+}
+
 /******** Tic Tac Toe Styling *******/
 
 #one {
