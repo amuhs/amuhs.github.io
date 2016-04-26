@@ -6,12 +6,12 @@
     margin-top: 30% !important;
 }
 
-.content img {
+.file-struc {
     width: 75% !important;
     height: auto !important;
 }
 
-/*.project .right {
+.project .right {
   float: right;
   height: 75px;
   width: auto;
@@ -30,7 +30,15 @@
   margin: 5% auto;
   height: 75px;
   width: auto;
-}*/
+}
+
+.contact-sep {
+  display: none;
+}
+
+.contact-break {
+  display: inline;
+}
 
 /******** Tic Tac Toe Styling *******/
 
