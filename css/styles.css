@@ -49,6 +49,10 @@ html {
   text-align: right !important;
 }
 
+.darker {
+    color: #000 !important;
+}
+
 /*****  Navigation  *****/
 
 #home-btn {
