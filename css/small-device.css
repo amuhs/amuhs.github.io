@@ -32,12 +32,30 @@
   width: auto;
 }
 
+.content pre {
+  margin-left: 10%;
+}
+
+/*****  Contact *****/
+
 .contact-sep {
   display: none;
 }
 
 .contact-break {
   display: inline;
+}
+
+.contact {
+  font-size: 3em;
+}
+
+
+/*****  Verse  *****/
+
+.card {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /******** Tic Tac Toe Styling *******/
