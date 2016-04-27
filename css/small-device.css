@@ -32,9 +32,9 @@
   width: auto;
 }
 
-.content .pre pre {
+/*.content .pre pre {
   margin-left: -10%;
-}
+}*/
 
 /*****  Contact *****/
 
@@ -48,7 +48,7 @@
 
 .contact {
   font-size: 2em !important;
-  margin-top: 10%;
+  margin-top: 20% !important;
 }
 
 
