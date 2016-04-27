@@ -32,9 +32,9 @@
   width: auto;
 }
 
-.content div pre {
+.smaller {
+  font-size: .65em;
   margin-left: 0;
-  font-size: smaller;
 }
 
 /*****  Contact *****/
