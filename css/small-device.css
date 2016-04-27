@@ -32,9 +32,9 @@
   width: auto;
 }
 
-/*.content .pre pre {
-  margin-left: -10%;
-}*/
+.content div pre {
+  margin-left: 0;
+}
 
 /*****  Contact *****/
 
