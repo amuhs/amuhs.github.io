@@ -172,6 +172,31 @@ html {
   border: solid 1px black;
 }
 
+.dropdown {
+  /*margin-top: 3%;*/
+  text-align: center;
+}
+
+/*http://stackoverflow.com/questions/19227496/scrollable-menu-with-bootstrap-3-menu-expanding-its-container-when-it-should-n*/
+/*http://stackoverflow.com/questions/25610774/bootstrap-3-dropdown-menu-center-align-not-working*/
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+    left: 50%;
+    right: auto;
+    text-align: center;
+    transform: translate(-50%, 0);
+}
+
+/*http://stackoverflow.com/questions/25610774/bootstrap-3-dropdown-menu-center-align-not-working*/
+/*.dropdown-menu {
+  left: 50%;
+  right: auto;
+  text-align: center;
+  transform: translate(-50%, 0);
+}*/
+
 /*****  Footer  *****/
 
 .footer {
