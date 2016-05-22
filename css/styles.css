@@ -172,7 +172,7 @@ html {
   border: solid 1px black;
 }
 
-.dropdown {
+.ctr-dropdwn {
   /*margin-top: 3%;*/
   text-align: center;
 }
@@ -203,4 +203,149 @@ html {
   display: none;
   /*position: fixed;
   bottom: 0 !important;*/
+}
+
+
+/* Portrait and Landscape */
+@media only screen
+  and (max-device-width: 900px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    /******** Content Styling *******/
+
+    .content {
+        margin-top: 30% ;
+    }
+
+    .content .file-struc {
+        width: 75% ;
+        height: auto ;
+    }
+
+    .project .right {
+      float: right;
+      height: 75px;
+      width: auto;
+      margin-left: 5%;
+    }
+
+    .project .left {
+      float: left;
+      height: 75px;
+      width: auto;
+      margin-right: 5%;
+    }
+
+    .project .center {
+      display: block;
+      margin: 5% auto;
+      height: 75px;
+      width: auto;
+    }
+
+    .smaller {
+      font-size: .65em;
+      margin-left: 0;
+    }
+
+    /*****  Contact *****/
+
+    .contact-sep {
+      display: none;
+    }
+
+    .contact-break {
+      display: inline;
+    }
+
+    .contact {
+      font-size: 2em;
+      margin-top: 20%;
+    }
+
+
+    /*****  Verse  *****/
+
+    .card {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /******** Tic Tac Toe Styling *******/
+
+    #one {
+      border-right: 2px solid;
+      border-bottom: 2px solid;
+      height: 100px;
+      width: 100px;
+    }
+
+    #two {
+      border-right: 2px solid;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      height: 100px;
+      width: 100px;
+    }
+
+    #three {
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      height: 100px;
+      width: 100px;
+    }
+
+    #four {
+      border-top: 2px solid;
+      border-right: 2px solid;
+      border-bottom: 2px solid;
+      height: 100px;
+      width: 100px;
+    }
+
+    #five {
+      border: 2px solid;
+      height: 100px;
+      width: 100px;
+    }
+
+    #six {
+      border-top: 2px solid;
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      height: 100px;
+      width: 100px;
+    }
+
+    #seven {
+      border-top: 2px solid;
+      border-right: 2px solid;
+      height: 100px;
+      width: 100px;
+    }
+
+    #eight {
+      border-top: 2px solid;
+      border-right: 2px solid;
+      border-left: 2px solid;
+      height: 100px;
+      width: 100px;
+    }
+
+    #nine {
+      border-top: 2px solid;
+      border-left: 2px solid;
+      height: 100px;
+      width: 100px;
+    }
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+
+    #reset {
+        font-weight: bolder;
+    }
+
 }
