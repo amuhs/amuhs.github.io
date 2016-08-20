@@ -6,7 +6,8 @@ $(document).ready(function(){
   ptTwo = ".png\"><img class=\"card\" src=\"verse-cards/Week-";
   ptThree = ".png\" /></a>";
 
-  $('.dropdown-menu li').click(function(){
+  $('.dropdown-menu li').click(function()
+  {
     weekNum = $(this).attr('value');
     $('.verse-card').html(ptOne + weekNum + ptTwo + weekNum + ptThree);
   });

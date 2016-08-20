@@ -1,10 +1,25 @@
-$(document).ready(function(){
-  var width, dropDown
-  width = screen.width;
-  dropDown = $('.games');
+$(function(){
+    var dropDown, week;
+    dropDown = $("#versesDropDown");
+    week = 8;
 
-  if(width <= 900){
-    dropDown.css('display', 'none');
-  }
+    for(var i = 1; i < 53; i++)
+    {
+        if(i <= week)
+        {
+            dropDown.append('<li value="' + i + '"><a href="#">Week ' + i + '</a></li>');
+        }
+        else
+        {
+            dropDown.append('<li class="disabled" value="' + i + '"><a href="#">Week ' + i + '</a></li>');
+        }
+    }
 
 });
+
+
+
+/*
+<li value="8"><a href="#">Week 8</a></li>
+<li class="disabled" value="' + i + '"><a href="#">Week ' + i + '</a></li>
+*/
