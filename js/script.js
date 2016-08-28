@@ -1,11 +1,11 @@
-$(function(){
+$(function () {
     var dropDown, week;
     dropDown = $("#versesDropDown");
-    week = 8;
+    week = 9;
 
-    for(var i = 1; i < 53; i++)
+    for (var i = 1; i < 53; i++)
     {
-        if(i <= week)
+        if (i <= week)
         {
             dropDown.append('<li value="' + i + '"><a href="#">Week ' + i + '</a></li>');
         }
