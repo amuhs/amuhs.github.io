@@ -28,7 +28,7 @@ int main()
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }
-#=> prints 'Hello, World!' to STDOUT.
+// prints 'Hello, World!' to STDOUT.
 {% endhighlight %}
 
 Yay, code snippets!
