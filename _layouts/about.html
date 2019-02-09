@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+{% include head.html %}
+
+<body>
+  <div class="wrapper">
+    {% include header.html %}
+    <section>
+
+      {{ content }}
+
+    </section>
+  </div>
+  {% include footer.html %}
+  <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  <script>
+    setTimeout(function() {
+      window.location.href = "{{ site.linkedin }}";
+    }, 5000);
+  </script>
+</body>
+
+</html>

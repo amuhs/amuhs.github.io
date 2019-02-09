@@ -1,0 +1,10 @@
+<header {% unless site.description %} class="without-description" {% endunless %}>
+    <h1><a href="/">{{ site.title }}</a></h1>
+    {% if site.description %}
+    <p>{{ site.description }}</p>
+    {% endif %}
+    <ul>
+        <li><a href="{{ site.github }}">View My <strong>GitHub</strong></a></li>
+        <li><a href="{{ site.linkedin }}">View My<strong>Linkedin</strong></a></li>
+    </ul>
+</header>
