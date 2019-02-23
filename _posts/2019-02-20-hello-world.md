@@ -10,15 +10,15 @@ Welcome, to my website. I say website because I am not sure what this is going t
 
 Code snippet examples:
 
-{% highlight ruby %}
+```python
 def print_hi(name):
     print(f'Hi, {name}')
 
 print_hi('Tom')
 # Hi, Tom
-{% endhighlight %}
+```
 
-{% highlight cpp %}
+```cpp
 #include <iostream>
 
 int main()
@@ -27,6 +27,6 @@ int main()
     return 0;
 }
 // Hello, World!
-{% endhighlight %}
+```
 
 Yay, code snippets!
