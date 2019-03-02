@@ -19,7 +19,7 @@ ECHO Importing custom tools into P4V...
 (
     ECHO <customTool>
     ECHO    <program>python</program>
-    ECHO    <arguments>C:\custon_tool.py --changelist %c</arguments>
+    ECHO    <arguments>C:\custom_tool.py --changelist %c</arguments>
     ECHO    <promptText>Enter a revision number (e.g. 38): </promptText>
     ECHO </customTool>
 ) >> %custom_tool_file%
@@ -40,8 +40,8 @@ ECHO Importing custom tools into P4V...
 (
     ECHO ^<customTool^>
     ECHO    ^<program^>python^</program^>
-    ECHO    ^<arguments^>C:\custon_tool.py --changelist %c^</arguments^>
-    ECHO    ^<promptText^>Enter a revision number (e.g. 38):^</promptText^>
+    ECHO    ^<arguments^>C:\custom_tool.py --changelist %c^</arguments^>
+    ECHO    ^<promptText^>Enter a revision number (e.g. 38): ^</promptText^>
     ECHO ^</customTool^>
 ) >> %custom_tool_file%
 
@@ -52,7 +52,7 @@ ECHO Import complete.
 EXIT /B 0
 ```
 
-If you call this in your batch script it will run, but you will see an error that looks similar to this `:</promptText> was unexpected at this time`. You would think that is a simple fix. Just escape the `:` and move along, but nope. That doesn't work. After a few google searches, I got lucky and found a [stackoverflow post](https://stackoverflow.com/a/26686415) from someone who also had parentheses in right before the colon. See where I am going with this? Batch was not having a problem with the colon. It was the parentheses! So I went from `(e.g. 38)^:^</promptText^>` to  `^(e.g. 38^):^</promptText^>` and the error was taken care of. There is still one more problem with the code snippet above. The `%` still needs to be escaped or it won't be in the resultant file. To escape a percent in batch, you don't use the caret symbol, you actually just double up the percent to `%%`. So the end result with everything escaped looks like the below:
+If you call this in your batch script it will run, but you will see an error that looks similar to this `: </promptText> was unexpected at this time`. You would think that is a simple fix. Just escape the `:` and move along, but it's not. After a few google searches, I got lucky and found a [stackoverflow post](https://stackoverflow.com/a/26686415) from someone who also had parentheses in right before the colon. Batch was not having a problem with the colon. It was the parentheses! So I went from `(e.g. 38)^: ^</promptText^>` to  `^(e.g. 38^): ^</promptText^>` and the error was taken care of. There is still one more problem with the code snippet above. The `%` still needs to be escaped or it won't be in the resultant file. To escape a percent in batch, you don't use the caret symbol, you actually just double up the percent to `%%`. So the end result with everything escaped looks like the below:
 
 ```batch
 :CUSTOM_TOOL_FILE
@@ -61,8 +61,8 @@ ECHO Importing custom tools into P4V...
 (
     ECHO ^<customTool^>
     ECHO    ^<program^>python^</program^>
-    ECHO    ^<arguments^>C:\custon_tool.py --changelist %%c^</arguments^>
-    ECHO    ^<promptText^>Enter a revision number ^(e.g. 38^):^</promptText^>
+    ECHO    ^<arguments^>C:\custom_tool.py --changelist %%c^</arguments^>
+    ECHO    ^<promptText^>Enter a revision number ^(e.g. 38^): ^</promptText^>
     ECHO ^</customTool^>
 ) >> %custom_tool_file%
 
@@ -77,7 +77,7 @@ Using the final code snippet will result in a usable XML file with the below tex
 ```xml
 <customTool>
     <program>python</program>
-    <arguments>C:\custon_tool.py --changelist %c</arguments>
+    <arguments>C:\custom_tool.py --changelist %c</arguments>
     <promptText>Enter a revision number (e.g. 38): </promptText>
 </customTool>
 ```
