@@ -1,12 +1,13 @@
 ---
-layout: default
+layout: post
 title:  "Escaping Strings in Batch"
 date:   2019-02-22 20:20:00 -0600
 categories: [code]
 tags:   [batch, Windows]
+edited: true
 ---
+
 Over the past year, I have developed a few custom tools for the software engineers at work to utilize within [P4V](https://www.perforce.com/downloads/helix-visual-client-p4v), the desktop client for interacting with [Helix Core (Perforce)](https://www.perforce.com/products/helix-core). These tools add some functionality to P4V that would otherwise be more difficult, or all together not possible. When new tools are added, or an argument changes, the SEs can edit the tool manually, or delete the tool and re-import via XML document.
-<!--more-->
 
 As a part of a much larger batch script for new installs, there is a section that will add the custom tools by deleting the old custom tools file in the user space (`%HOMEPATH%\.p4qt\customTools.xml`), and creating the new file for P4V to pick up. To do this, the XML is echo'd to the new file.
 

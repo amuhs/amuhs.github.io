@@ -16,9 +16,9 @@
 title: assert title
 description: >- # this means to ignore newlines until "baseurl:"
   No, I’m from Iowa. I only work in tech.
-excerpt_separator: <!--more-->
 github: https://github.com/amuhs
 linkedin: https://www.linkedin.com/in/andrew-muhs-226a4081
+author: Andrew Muhs
 
 # Build settings
 markdown: kramdown
