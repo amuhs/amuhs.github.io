@@ -1,14 +1,52 @@
 #!/usr/bin/env bash
 
-while getopts s:f:c:t: option
+while getopts s:f:c:t:?h option
 do
   case "${option}" in
     s) SHORT=${OPTARG};;
     f) FULL=${OPTARG};;
     c) CAT=${OPTARG};;
     t) TAG=${OPTARG};;
+    h|?) HELP=true
   esac
 done
+
+if [ "$HELP" = true ]; then
+  echo ""
+  echo "NAME"
+  echo "     new_post -- creates a markdown file for a new post"
+  echo ""
+  echo "SYNOPSIS"
+  echo "     new_post.sh [-h]-s \"title_for_file\" -f \"full_post_title\" [-c \"category1, category2, categoryN\"] [-t \"tag1, tag2, tagN\"]"
+  echo ""
+  echo "DESCRIPTION"
+  echo "     The new_post script will create a new md (markdown) file in the _posts directory using the supplied short and full post titles."
+  echo ""
+  echo "     By defaut, a file is created using the current date and time, and generates the appropriate front matter. Categories and tags "
+  echo "     may also be given at script run so they may be added to the front matter as well. Some Lorem Ipsum text is also added to the "
+  echo "     post body of the file."
+  echo ""
+  echo "     The following options are available:"
+  echo ""
+  echo "     -h      Display this infomation and exit"
+  echo ""
+  echo "     -s      The shortened title of the post to be used in the file extention"
+  echo ""
+  echo "     -f      The complete text of the post"
+  echo ""
+  echo "     -c      Add the following categories to the post"
+  echo ""
+  echo "     -t      Add the following tags to the post"
+  echo ""
+  exit 0
+fi
+
+# Getting some logging (echoing some stuff) going so I can debug if something goes wrong
+echo "Found a short title of: ${SHORT}"
+echo "Found a full title of:  ${FULL}"
+echo "Categories found:       ${CAT}"
+echo "Tags found:             ${TAG}"
+
 
 cwd=$(pwd)
 post_dir="${cwd}/_posts/"
@@ -16,10 +54,12 @@ post_date=`date +"%Y-%m-%d"`
 short_fix="$( echo "${SHORT}" | sed 's/[[:space:]]/-/g')"
 post="${post_dir}${post_date}-${short_fix}.md"
 
+echo "Checking existing post titles..."
 if [ -f $post ]; then
   echo "A post already exists with that name."
   exit 0
 else
+  echo "No post exists with that title."
   echo "Creating new post file..."
   touch $post
 fi
