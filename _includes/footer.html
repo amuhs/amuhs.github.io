@@ -1,8 +1,3 @@
-<footer>
-  {% if site.github.is_project_page %}
-  <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-  {% endif %}
-  <p>All content copyright <a href="{{ site.linkedin }}">Andrew Muhs</a> &copy; 2019 &bull; All rights reserved.
-  </br>Hosted on GitHub Pages &mdash; <a href="https://github.com/pages-themes/modernist">Modernist</a> theme by <a href="https://github.com/orderedlist">orderedlist</a>
-  </br>Made with <a href="http://jekyllrb.com/">Jekyll</a></p>
-</footer>
+<span>
+    &copy; {{ site.time | date: '%Y' }} {{ site.copyright }}.<br>Powered by <a target="_blank" href="https://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a target="_blank" href="https://github.com/benradford/Slate-and-Simple-Jekyll-Theme">Slate+Simple</a> theme.
+</span>

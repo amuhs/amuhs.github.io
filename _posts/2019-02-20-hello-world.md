@@ -1,7 +1,10 @@
 ---
 layout: post
-title:  "Hello, World!"
-date:   2019-02-20 12:00:00 -0600
+title:  Hello, World!
+author: Andrew Muhs
+featured-image: /images/extra/abstract-1.jpg
+tags: [intro]
+date:   2019-02-20
 ---
 
 The compulsory "Hello, World" post... It only seems right to title this post like that given the fact I work in tech, primarily with software.

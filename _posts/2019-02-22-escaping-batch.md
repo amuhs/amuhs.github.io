@@ -3,7 +3,7 @@ layout: post
 title:  "Escaping Strings in Batch"
 date:   2019-02-22 20:20:00 -0600
 categories: [code]
-tags:   [batch, Windows]
+tags:   [batch, windows]
 edited: true
 ---
 

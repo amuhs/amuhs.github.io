@@ -35,7 +35,7 @@
             <div class="featured-image">
             <img src="{{ page.featured-image}}" style="width:100%">
             </div>
-
+            
             <!-- MAIN -->
             <h1 class="entry-title">
                 <a>{{ page.title }}</a>
@@ -46,11 +46,22 @@
             <!-- POST BYLINE -->
             <div class="post-byline">
                 {{ page.author }}
-                {% if page.link %} 
+                {% if page.web or page.github %} 
                 <br>
-                <a href="{{ page.link }}">LINK</a>
+                    {% if page.web %}
+                    <a href="{{ page.web-link }}"><i>View Project Website</i></a>
+                    {% endif %}
+
+                    {% if page.web and page.github %}
+                    <br>
+                    {% endif %}
+
+                    {% if page.github %}
+                    <a href="{{ page.github-link }}"><i>View Project on GitHub</i> <i class='fa fa-github-alt'></i></a>
+                    {% endif %}
                 {% endif %}
-            </div>
+            </div><br>
+            <!-- POST DATE -->
             <div class="post-date">
             {% if page.edited %}
                 {{ page.date | date: "%-d %B %Y" }} (edited)
@@ -68,7 +79,7 @@
 
             <!--- DIVIDING LINE -->
             <hr>
-
+    
             <!-- POST TAGS -->
             <div class="inline-tags">
                 <span>
@@ -77,13 +88,9 @@
                     {% endfor %}
                 </span>
             </div>
-
+          
             <br>
-
-            <!-- POST DATE -->
-            <div class="post-date">
-                {{ page.date-string }}
-            </div>
+            
         </article>
     </div>
 </body>
@@ -94,6 +101,6 @@
         <footer role="contentinfo">
             {% include footer.html %}
         </footer>
-    </div>
-</footer>
+    </div>   
+</footer>  
 </html>
