@@ -75,6 +75,7 @@ EXIT /B 0
 ```
 
 Using the final code snippet will result in a usable XML file with the below text inside.
+
 ```xml
 <customTool>
     <program>python</program>
