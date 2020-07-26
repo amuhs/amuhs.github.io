@@ -59,7 +59,6 @@ if [ -f $post ]; then
   echo "A post already exists with that name."
   exit 0
 else
-  echo "No post exists with that title."
   echo "Creating new post file..."
   touch $post
 fi
@@ -67,6 +66,7 @@ fi
 echo "---" >> $post
 echo "layout: post" >> $post
 echo "title: \"${FULL}\"" >> $post
+echo "author: Andrew Muhs" >> $post
 echo "date: ${post_date} 00:00:00 -6000" >> $post
 
 if [ ! -z "$CAT" ]; then

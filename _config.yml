@@ -1,6 +1,6 @@
-title:            Assert Title
-description:      No, I’m from Iowa. I only work in tech.
-copyright:        Andrew Muhs
+title: Assert Title
+description: No, I’m from Iowa. I only work in tech.
+copyright: Andrew Muhs
 url: https://amuhs.github.io
 
 
@@ -56,3 +56,4 @@ exclude:
   - package.json
   - spec
   - tmp
+  - "*.sh"
