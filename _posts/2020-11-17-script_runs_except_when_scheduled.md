@@ -20,15 +20,15 @@ The first thing I did was add more logging to the scripts and rerun them. Once I
 
 In my next test run, I changed the paths to use the UNC paths. No luck. I also made sure the paths were quoted correctly since there was a space in one of the directory names. Still no luck.
 
-For my next test I actually wrote a python script, compiled it into an exe, and then used that exe to replace the vb script. Running that particular configuration worked. I still didn't know why thought.
+For my next test, I actually wrote a python script, compiled it into an exe, and then used that exe to replace the vb script. Running that particular configuration worked. I still didn't know why though.
 
 Because we were trying not to introduce any additional dependencies, I took what I did in python and figured out how to do the same thing in PowerShell. (I am faster with python so it made more sense to test with it first.) The powershell version resulted in a failure.
 
 I wasn't sure where to go from here. I knew I could get it to work with the exe, but I didn't know why it was working. I didn't want to just get it to work and then move on. If I did that this same problem would pop up again and I wouldn't know what to do. So I tabled this for the weekend.
 
-Over the weekend it occured to me that the python script was actually opening the Excel archive and reading the XML files (Yes, Excel files are just archives of XML documents.) where the vb script and powershell were using the COM object to do the conversion. With that I was able to do some more targeted Googling and I found [this personal blog post](https://www.jonashendrickx.com/2016/04/07/when-run-as-scheduled-task-excel-wont-save-with-powershell/) which led to my next test.
+Over the weekend it occured to me that the python script was actually opening the Excel archive and reading the XML files (Yes, Excel files are just archives of XML documents.) where the vb script and powershell were using the COM object to do the conversion. With that, I was able to do some more targeted Googling and I found [this personal blog post](https://www.jonashendrickx.com/2016/04/07/when-run-as-scheduled-task-excel-wont-save-with-powershell/) which led to my next test.
 
-First thing I did was make sure these two directories existed:
+The first thing I did was to make sure these two directories existed:
 
 ```
 C:\Windows\System32\config\systemprofile\Desktop
